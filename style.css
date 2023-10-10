@@ -6,7 +6,6 @@ html {
   min-height: 100vh;
   background: rgb(1,1,1);
   background: linear-gradient(180deg, rgba(1,1,1,1) 0%, rgba(121,121,119,1) 100%);
-  );
 }
 
 header {
