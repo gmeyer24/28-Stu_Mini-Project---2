@@ -1,0 +1,114 @@
+:root{
+    --color:rgba(170, 55, 188, 0.689);
+}
+
+html {
+  min-height: 100vh;
+  background: rgb(1,1,1);
+  background: linear-gradient(180deg, rgba(1,1,1,1) 0%, rgba(121,121,119,1) 100%);
+  );
+}
+
+header {
+  margin-bottom: 2em;
+  color: white;
+  text-align: center;
+  /* text-shadow: 4px 4px var(--color) ; */
+}
+
+header:hover {
+    transition: 0.5s;
+    transform: scale(110%);
+    z-index: 100;  
+}
+.glow {
+    font-size: 35px;
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px goldenrod, 0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px goldenrod, 0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod, 0 0 80px goldenrod;
+    }
+  }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  background-color: var(--color);
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: relative;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+  border: rgb(251, 251, 254) 2px solid;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+article h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-variant: small-caps;
+  color: white;
+  background-color: black;
+  padding: 0.25em;
+  position: absolute;
+  top: -1.2em;
+  /* left: -0.5em; */
+  left: 3.8em;
+  box-sizing: border-box;
+  border: white 2px solid;
+  box-shadow: 2px 2px white;
+  border-radius: 10px;
+}
+
+article:hover {
+  transition: 0.5s;
+  transform: scale(110%);
+  z-index: 100;
+  background-color: greenyellow ;
+  
+}
+article p {
+  margin-top: 2em;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+article pre {
+  background-color: white;
+  font-size: 1.5em;
+  margin: 0.25em;
+  padding: 0.5em;
+  box-shadow: inset 2px 2px 5px black;
+  user-select: all;
+  border-radius: 10px;
+}
+
+h2:hover {
+    color: var(--color);
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: bold;
+}
